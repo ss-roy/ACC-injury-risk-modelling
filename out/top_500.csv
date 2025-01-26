@@ -1,0 +1,501 @@
+"PersonACCId","age_at_extraction_date","ethnicity_last_claim","location_tla_last_claim","work_last_claim","Areaunit_score","num_gym_all","num_wgt_all","YEJune_last_claim","total_injuries","predicted_prob_class_1"
+80000,29,"European","Unknown","Medium Work",6,1,0,"2016-06",18,0.06
+79998,29,"Pacific Peoples","Unknown","Heavy Work",9,0,0,"2015-06",4,0
+79997,31,"European","Hamilton City","Medium Work",4,0,0,"2016-06",21,0.11
+79994,32,"European","Christchurch City","Medium Work",7,0,0,"2008-06",1,0.01
+79993,63,"Maori","Unknown","Sedentary Work",10,0,0,"2007-06",0,0.02
+79992,27,"European","Unknown","Medium Work",6,0,0,"2015-06",5,0.01
+79990,48,"European","Unknown","Heavy Work",99,0,0,"2012-06",4,0.01
+79989,53,"European","Tauranga City","Medium Work",7,0,0,"2010-06",0,0
+79988,24,"European","Unknown","Heavy Work",5,0,0,"2014-06",14,0.02
+79987,22,"European","Unknown","Medium Work",7,0,0,"2013-06",0,0
+79986,28,"European","Unknown","Sedentary Work",9,1,0,"2015-06",24,0.06
+79985,44,"European","Unknown","Light Work",8,0,0,"2010-06",5,0.01
+79984,16,"European","Unknown","Sedentary Work",7,0,0,"2013-06",7,0.04
+79983,23,"European","Christchurch City","Medium Work",7,0,0,"2016-06",7,0.03
+79982,37,"Maori","Unknown","Sedentary Work",9,1,0,"2014-06",6,0.07
+79981,24,"European","Wellington City","Light Work",1,0,1,"2011-06",1,0.01
+79980,55,"European","Auckland City","Light Work",3,0,0,"2016-06",8,0.01
+79979,52,"European","Unknown","Medium Work",5,0,0,"2016-06",31,0.07
+79978,20,"European","Unknown","Sedentary Work",9,0,0,"2012-06",14,0.02
+79977,71,"European","Unknown","Sedentary Work",6,0,0,"2010-06",17,0.09
+79976,73,"European","Unknown","Sedentary Work",8,0,0,"2015-06",5,0.02
+79975,35,"European","Auckland City","Sedentary Work",1,0,0,"2011-06",4,0.05
+79974,58,"European","Unknown","Not Stated",3,0,0,"2012-06",4,0.03
+79973,77,"European","North Shore City","Sedentary Work",2,0,0,"2014-06",16,0.04
+79972,43,"European","Unknown","Sedentary Work",4,0,0,"2012-06",5,0.02
+79971,61,"Maori","Whangarei District","Sedentary Work",6,0,0,"2007-06",3,0
+79970,48,"European","Unknown","Very Heavy Work",5,0,0,"2009-06",0,0.01
+79969,72,"Other Ethnicity","Unknown","Sedentary Work",99,0,0,"2009-06",2,0.02
+79968,28,"European","Auckland City","Light Work",7,0,0,"2010-06",1,0
+79967,39,"European","Unknown","Light Work",9,0,0,"2010-06",4,0.02
+79966,63,"European","Christchurch City","Sedentary Work",5,1,0,"2016-06",12,0.06
+79965,49,"European","Christchurch City","Sedentary Work",9,0,0,"2011-06",2,0.01
+79964,56,"European","Auckland City","Sedentary Work",2,0,0,"2012-06",1,0
+79963,18,"European","Unknown","Sedentary Work",10,0,0,"2011-06",3,0.01
+79962,28,"Pacific Peoples","Whangarei District","Sedentary Work",9,0,0,"2016-06",1,0.03
+79961,29,"European","Unknown","Heavy Work",1,0,0,"2015-06",6,0.04
+79960,28,"European","Unknown","Medium Work",6,0,0,"2007-06",6,0.05
+79959,75,"European","Wellington City","Sedentary Work",1,0,0,"2008-06",3,0.05
+79958,34,"European","Unknown","Heavy Work",8,0,0,"2014-06",4,0.01
+79957,63,"Other Ethnicity","Unknown","Medium Work",9,0,0,"2016-06",10,0.05
+79956,49,"European","Wellington City","Medium Work",4,0,0,"2013-06",0,0.06
+79955,32,"European","Auckland City","Medium Work",6,0,0,"2014-06",1,0.01
+79953,34,"Asian","Auckland City","Not Stated",3,0,0,"2011-06",6,0.05
+79951,75,"European","Unknown","Sedentary Work",2,0,0,"2016-06",2,0.07
+79950,80,"European","Wellington City","Sedentary Work",4,0,0,"2014-06",2,0.02
+79949,33,"European","Auckland City","Sedentary Work",5,0,0,"2014-06",6,0.05
+79948,47,"European","Unknown","Sedentary Work",3,0,0,"2015-06",4,0.01
+79947,34,"Maori","Unknown","Not Stated",9,0,1,"2016-06",9,0.15
+79945,24,"European","Auckland City","Light Work",4,0,0,"2015-06",1,0
+79944,32,"Asian","Hamilton City","Sedentary Work",9,0,0,"2009-06",8,0.08
+79943,31,"European","Dunedin City","Sedentary Work",3,0,1,"2012-06",5,0.07
+79942,61,"European","Auckland City","Medium Work",2,0,0,"2016-06",6,0.02
+79941,41,"Maori","Unknown","Very Heavy Work",5,0,0,"2015-06",5,0.02
+79940,43,"Maori","Auckland City","Very Heavy Work",10,0,0,"2010-06",1,0.03
+79938,69,"Residual Categories","Unknown","Sedentary Work",4,0,0,"2015-06",13,0.06
+79937,44,"Pacific Peoples","Auckland City","Medium Work",99,0,0,"2013-06",4,0
+79936,49,"European","Christchurch City","Medium Work",4,0,0,"2015-06",11,0.03
+79935,59,"Asian","Manukau City","Light Work",2,0,0,"2008-06",3,0.03
+79934,32,"Asian","Auckland City","Sedentary Work",7,0,0,"2008-06",3,0.03
+79933,32,"Pacific Peoples","Auckland City","Heavy Work",10,1,0,"2015-06",5,0.08
+79932,76,"Asian","Unknown","Light Work",1,0,0,"2012-06",2,0.04
+79929,28,"European","Unknown","Sedentary Work",3,0,0,"2011-06",4,0.02
+79928,44,"Asian","Wellington City","Heavy Work",2,0,0,"2006-06",0,0.04
+79927,35,"European","Unknown","Sedentary Work",9,0,0,"2009-06",15,0.07
+79926,23,"Residual Categories","Manukau City","Sedentary Work",8,0,0,"2014-06",0,0
+79925,32,"Residual Categories","Christchurch City","Sedentary Work",1,0,0,"2009-06",2,0.03
+79924,20,"European","Unknown","Heavy Work",3,0,0,"2016-06",4,0.08
+79921,72,"European","Unknown","Sedentary Work",3,0,0,"2016-06",2,0
+79920,40,"European","Unknown","Heavy Work",7,0,0,"2016-06",18,0.09
+79919,22,"Other Ethnicity","Unknown","Sedentary Work",6,2,0,"2016-06",17,0.24
+79917,21,"European","Unknown","Sedentary Work",1,0,0,"2011-06",2,0.05
+79916,54,"European","Wellington City","Sedentary Work",3,0,0,"2015-06",12,0.07
+79915,36,"European","Unknown","Light Work",9,0,1,"2016-06",3,0.08
+79914,41,"European","Tauranga City","Sedentary Work",7,0,0,"2014-06",12,0.06
+79913,70,"European","Auckland City","Medium Work",4,0,0,"2011-06",4,0.03
+79912,35,"European","Christchurch City","Medium Work",4,0,0,"2010-06",3,0.02
+79911,28,"European","Auckland City","Heavy Work",8,0,0,"2013-06",9,0.04
+79910,45,"Asian","Auckland City","Heavy Work",4,0,0,"2012-06",10,0.05
+79909,21,"European","Auckland City","Sedentary Work",6,0,0,"2014-06",2,0.01
+79908,56,"European","Unknown","Sedentary Work",5,0,0,"2012-06",4,0.01
+79906,24,"European","Auckland City","Sedentary Work",6,0,0,"2015-06",2,0
+79905,42,"European","Auckland City","Light Work",1,0,0,"2015-06",3,0.02
+79904,25,"Other Ethnicity","Christchurch City","Heavy Work",8,0,0,"2015-06",2,0
+79903,69,"European","Unknown","Heavy Work",9,0,0,"2012-06",8,0.04
+79902,25,"Asian","Auckland City","Sedentary Work",3,0,0,"2010-06",0,0.02
+79901,50,"European","Unknown","Medium Work",4,0,0,"2014-06",5,0.01
+79900,54,"Maori","Auckland City","Light Work",6,0,0,"2016-06",8,0.01
+79898,68,"Residual Categories","Whangarei District","Sedentary Work",8,0,0,"2007-06",0,0
+79896,52,"Other Ethnicity","Unknown","Light Work",99,0,0,"2007-06",0,0.01
+79895,61,"European","Auckland City","Sedentary Work",6,0,0,"2013-06",5,0.02
+79894,28,"European","Unknown","Sedentary Work",9,0,0,"2016-06",21,0.11
+79893,63,"European","Auckland City","Sedentary Work",4,0,0,"2015-06",5,0.03
+79892,36,"European","Unknown","Sedentary Work",4,0,0,"2016-06",21,0.06
+79891,27,"Asian","Auckland City","Sedentary Work",3,0,0,"2008-06",6,0.04
+79890,22,"Maori","Auckland City","Sedentary Work",3,0,0,"2006-06",0,0.02
+79889,27,"European","Wellington City","Sedentary Work",8,0,0,"2015-06",1,0.02
+79886,74,"Maori","Auckland City","Sedentary Work",99,0,0,"2015-06",8,0.08
+79884,59,"European","Hamilton City","Medium Work",8,0,0,"2008-06",3,0.03
+79882,56,"European","Auckland City","Sedentary Work",4,0,0,"2014-06",1,0
+79881,22,"European","Unknown","Sedentary Work",8,0,0,"2011-06",13,0.03
+79879,45,"European","Auckland City","Light Work",1,0,1,"2013-06",4,0.03
+79876,62,"European","Unknown","Sedentary Work",4,0,0,"2015-06",7,0.04
+79875,26,"European","Auckland City","Sedentary Work",3,0,0,"2011-06",3,0.02
+79874,26,"European","Christchurch City","Medium Work",2,0,0,"2014-06",6,0.05
+79873,59,"European","North Shore City","Not defined",1,0,0,"2007-06",1,0.02
+79872,53,"European","Wellington City","Medium Work",99,0,0,"2016-06",4,0.01
+79871,35,"Other Ethnicity","Auckland City","Heavy Work",99,0,0,"2016-06",1,0.02
+79870,55,"European","Wellington City","Sedentary Work",6,0,0,"2011-06",3,0
+79869,15,"European","Unknown","Sedentary Work",4,0,0,"2015-06",7,0.08
+79868,50,"European","Unknown","Not Stated",9,0,0,"2013-06",5,0.03
+79867,18,"European","Unknown","Sedentary Work",3,0,0,"2010-06",3,0.01
+79865,44,"European","Auckland City","Medium Work",6,0,0,"2014-06",2,0.02
+79863,24,"Residual Categories","Wellington City","Sedentary Work",99,0,0,"2009-06",1,0.08
+79862,26,"Maori","Tauranga City","Heavy Work",5,0,0,"2016-06",7,0.09
+79860,58,"European","Unknown","Medium Work",3,0,0,"2014-06",5,0.01
+79859,22,"European","Unknown","Sedentary Work",7,0,0,"2010-06",4,0.01
+79858,37,"European","Auckland City","Sedentary Work",5,0,0,"2010-06",3,0
+79857,52,"Maori","Unknown","Medium Work",10,0,0,"2014-06",2,0.07
+79856,60,"European","Unknown","Medium Work",99,0,0,"2011-06",2,0.04
+79855,41,"Other Ethnicity","Christchurch City","Light Work",99,0,1,"2016-06",38,0.12
+79854,43,"Other Ethnicity","Auckland City","Medium Work",5,0,0,"2007-06",12,0.05
+79852,27,"European","Unknown","Sedentary Work",9,0,0,"2010-06",16,0.06
+79851,33,"Asian","Wellington City","Light Work",5,2,0,"2012-06",8,0.09
+79850,68,"Asian","Auckland City","Sedentary Work",6,0,0,"2014-06",0,0
+79848,24,"European","Unknown","Sedentary Work",10,0,0,"2016-06",8,0.04
+79847,44,"European","Auckland City","Heavy Work",99,0,0,"2015-06",4,0.02
+79846,16,"Asian","Auckland City","Sedentary Work",8,0,0,"2016-06",1,0.02
+79844,69,"European","Unknown","Heavy Work",4,0,0,"2015-06",2,0
+79842,15,"Maori","Unknown","Sedentary Work",10,0,0,"2015-06",6,0.05
+79841,47,"European","Unknown","Medium Work",8,0,0,"2015-06",8,0.03
+79840,20,"Asian","Wellington City","Sedentary Work",1,0,0,"2012-06",2,0.06
+79839,57,"European","Unknown","Heavy Work",5,0,0,"2006-06",3,0.04
+79838,58,"European","Unknown","Sedentary Work",8,0,0,"2014-06",4,0.01
+79837,53,"Maori","Tauranga City","Sedentary Work",7,0,0,"2015-06",0,0.01
+79836,34,"Other Ethnicity","Auckland City","Heavy Work",6,0,0,"2016-06",2,0.05
+79835,51,"European","Unknown","Medium Work",4,0,0,"2016-06",6,0.06
+79833,35,"Other Ethnicity","Unknown","Medium Work",8,0,0,"2010-06",3,0.02
+79832,23,"Asian","Wellington City","Medium Work",99,1,0,"2016-06",2,0.13
+79831,60,"European","Unknown","Sedentary Work",8,0,0,"2011-06",9,0.01
+79830,54,"Other Ethnicity","Unknown","Not Stated",7,0,0,"2008-06",11,0.02
+79829,67,"European","Wellington City","Medium Work",8,0,0,"2011-06",4,0.04
+79827,37,"Maori","Unknown","Heavy Work",10,0,0,"2016-06",4,0.05
+79826,51,"European","Unknown","Sedentary Work",7,0,0,"2008-06",1,0.02
+79825,20,"European","Unknown","Not Stated",4,0,0,"2014-06",19,0.08
+79824,32,"Maori","Auckland City","Sedentary Work",9,0,0,"2016-06",4,0.01
+79823,16,"European","Auckland City","Sedentary Work",3,2,0,"2016-06",11,0.14
+79821,52,"Maori","Auckland City","Sedentary Work",99,0,0,"2011-06",3,0.06
+79819,50,"Maori","Auckland City","Very Heavy Work",10,0,0,"2012-06",4,0.05
+79818,15,"Maori","Unknown","Sedentary Work",9,0,0,"2014-06",1,0
+79817,27,"European","Wellington City","Light Work",5,0,1,"2015-06",10,0.06
+79815,61,"European","Unknown","Medium Work",2,0,0,"2009-06",2,0.03
+79814,78,"European","Unknown","Sedentary Work",4,0,0,"2015-06",10,0.07
+79812,15,"European","Unknown","Very Heavy Work",1,1,0,"2013-06",11,0.05
+79809,61,"European","Unknown","Sedentary Work",7,0,0,"2009-06",5,0
+79808,28,"European","Tauranga City","Sedentary Work",9,0,0,"2016-06",0,0
+79807,39,"European","Unknown","Light Work",1,0,0,"2015-06",4,0.01
+79806,38,"European","Auckland City","Medium Work",4,0,2,"2016-06",30,0.14
+79805,46,"Pacific Peoples","Manukau City","Medium Work",5,0,0,"2016-06",3,0.03
+79804,19,"European","Unknown","Light Work",2,0,0,"2016-06",29,0.14
+79803,70,"Asian","Christchurch City","Not Stated",7,0,0,"2008-06",1,0.02
+79801,30,"European","Wellington City","Sedentary Work",99,0,0,"2014-06",4,0.01
+79800,21,"European","Hamilton City","Sedentary Work",5,0,0,"2010-06",6,0.01
+79799,28,"European","Unknown","Heavy Work",8,0,0,"2016-06",9,0.02
+79798,52,"European","Whangarei District","Heavy Work",9,0,0,"2012-06",1,0.01
+79797,49,"European","Auckland City","Medium Work",2,0,0,"2016-06",7,0.03
+79796,25,"Asian","Auckland City","Medium Work",5,0,0,"2010-06",2,0.03
+79795,68,"Asian","Auckland City","Sedentary Work",4,0,0,"2012-06",2,0.03
+79794,65,"Residual Categories","Unknown","Sedentary Work",8,0,0,"2015-06",4,0
+79793,27,"Maori","Hamilton City","Sedentary Work",10,0,0,"2016-06",4,0.07
+79792,24,"European","Unknown","Not Stated",9,0,0,"2012-06",8,0.08
+79791,37,"European","Unknown","Heavy Work",99,0,0,"2015-06",1,0.02
+79790,20,"European","Auckland City","Medium Work",1,0,0,"2016-06",9,0.11
+79789,25,"European","Whangarei District","Medium Work",4,0,0,"2009-06",0,0.05
+79788,66,"European","Unknown","Sedentary Work",3,0,0,"2007-06",1,0.02
+79787,58,"European","Auckland City","Not Stated",3,1,2,"2016-06",43,0.19
+79786,16,"European","Unknown","Sedentary Work",8,0,0,"2016-06",2,0.01
+79784,51,"European","Christchurch City","Heavy Work",2,0,0,"2009-06",6,0.03
+79783,56,"European","Unknown","Light Work",2,0,0,"2010-06",4,0.01
+79782,32,"Asian","Unknown","Light Work",9,0,0,"2011-06",1,0.01
+79781,58,"European","Christchurch City","Heavy Work",7,0,0,"2010-06",5,0.02
+79779,44,"European","Unknown","Heavy Work",7,0,0,"2009-06",3,0.01
+79778,64,"European","Unknown","Sedentary Work",6,0,0,"2016-06",21,0.07
+79777,21,"Maori","Unknown","Not defined",10,0,0,"2007-06",1,0.02
+79776,23,"European","Whangarei District","Sedentary Work",10,0,0,"2010-06",4,0.03
+79775,28,"European","Unknown","Heavy Work",9,0,0,"2010-06",1,0.01
+79774,36,"European","Unknown","Not Stated",99,0,0,"2008-06",2,0
+79773,28,"Asian","North Shore City","Sedentary Work",1,0,0,"2006-06",4,0.05
+79772,43,"European","Auckland City","Sedentary Work",6,0,0,"2013-06",7,0.05
+79771,55,"European","Christchurch City","Medium Work",8,0,0,"2015-06",16,0.06
+79770,15,"European","Auckland City","Sedentary Work",1,0,0,"2010-06",1,0.03
+79769,16,"Maori","Unknown","Sedentary Work",6,0,0,"2015-06",7,0.01
+79768,45,"European","Auckland City","Light Work",5,0,0,"2016-06",20,0.08
+79766,41,"European","Unknown","Heavy Work",99,0,0,"2015-06",7,0.01
+79765,56,"European","Auckland City","Medium Work",8,0,0,"2009-06",0,0
+79764,24,"European","Unknown","Light Work",8,0,0,"2015-06",13,0.06
+79763,62,"Asian","Unknown","Sedentary Work",9,0,0,"2014-06",4,0.04
+79762,49,"European","Unknown","Medium Work",2,0,0,"2015-06",7,0.03
+79761,49,"Residual Categories","Unknown","Medium Work",10,0,0,"2010-06",3,0.03
+79760,69,"European","Unknown","Heavy Work",9,0,0,"2014-06",0,0
+79759,37,"Asian","Auckland City","Light Work",5,0,0,"2014-06",3,0.06
+79758,42,"Maori","Unknown","Sedentary Work",9,1,0,"2015-06",6,0.12
+79756,78,"European","Unknown","Sedentary Work",10,0,0,"2015-06",5,0.05
+79755,77,"European","Unknown","Sedentary Work",7,0,0,"2011-06",1,0.04
+79753,56,"European","Dunedin City","Sedentary Work",6,0,0,"2016-06",25,0.1
+79752,39,"European","Whangarei District","Sedentary Work",2,0,1,"2016-06",23,0.19
+79751,26,"Maori","Auckland City","Sedentary Work",8,0,0,"2012-06",7,0.04
+79749,19,"Asian","Auckland City","Sedentary Work",1,1,0,"2008-06",2,0.15
+79748,17,"Maori","Manukau City","Sedentary Work",10,0,0,"2013-06",1,0
+79747,48,"European","Auckland City","Medium Work",99,1,0,"2012-06",7,0.05
+79746,23,"European","Auckland City","Sedentary Work",8,0,0,"2016-06",6,0.05
+79745,27,"European","Auckland City","Sedentary Work",4,1,0,"2013-06",12,0.03
+79743,49,"Maori","Unknown","Sedentary Work",10,0,0,"2011-06",0,0
+79742,70,"European","Unknown","Sedentary Work",5,0,0,"2014-06",8,0.05
+79741,53,"Asian","Auckland City","Medium Work",99,0,0,"2008-06",5,0.01
+79740,57,"European","Unknown","Sedentary Work",99,0,0,"2015-06",4,0.05
+79739,20,"European","Auckland City","Sedentary Work",7,0,0,"2014-06",0,0
+79738,18,"Maori","Unknown","Heavy Work",4,0,0,"2015-06",15,0.09
+79737,61,"Residual Categories","Christchurch City","Medium Work",2,0,0,"2008-06",1,0.03
+79736,67,"Other Ethnicity","Unknown","Sedentary Work",7,0,0,"2015-06",5,0.02
+79735,15,"European","Unknown","Sedentary Work",99,0,0,"2006-06",1,0.03
+79734,61,"European","Dunedin City","Medium Work",5,0,0,"2015-06",8,0.01
+79733,48,"European","Unknown","Sedentary Work",1,0,0,"2016-06",5,0.01
+79731,58,"Maori","Unknown","Medium Work",5,0,0,"2016-06",4,0
+79730,27,"European","North Shore City","Heavy Work",1,1,1,"2016-06",84,0.16
+79728,24,"European","Unknown","Medium Work",2,0,0,"2015-06",6,0.02
+79726,80,"European","Auckland City","Sedentary Work",1,0,0,"2011-06",0,0.09
+79724,50,"European","Unknown","Heavy Work",7,0,0,"2015-06",10,0.02
+79722,25,"European","Auckland City","Medium Work",3,0,0,"2011-06",7,0.03
+79721,40,"European","North Shore City","Light Work",1,0,0,"2010-06",4,0.02
+79720,54,"European","Unknown","Heavy Work",3,0,0,"2008-06",6,0.03
+79719,49,"European","Unknown","Medium Work",1,0,0,"2014-06",8,0
+79718,44,"Asian","North Shore City","Sedentary Work",8,0,0,"2012-06",5,0.02
+79717,55,"European","Auckland City","Sedentary Work",3,0,0,"2011-06",2,0.04
+79716,29,"Pacific Peoples","Manukau City","Medium Work",7,1,5,"2015-06",20,0.14
+79715,22,"European","Wellington City","Sedentary Work",1,0,0,"2014-06",3,0.03
+79714,59,"European","Unknown","Heavy Work",7,0,0,"2016-06",4,0
+79711,27,"Pacific Peoples","Auckland City","Medium Work",6,0,0,"2016-06",13,0.07
+79710,37,"European","Unknown","Light Work",5,0,0,"2007-06",2,0.01
+79708,24,"European","Unknown","Heavy Work",99,0,0,"2014-06",5,0.02
+79707,31,"Asian","Auckland City","Light Work",9,0,0,"2013-06",3,0.05
+79705,24,"European","Unknown","Sedentary Work",99,0,0,"2012-06",4,0.02
+79704,48,"European","Auckland City","Sedentary Work",3,0,0,"2015-06",1,0
+79703,20,"Maori","Unknown","Sedentary Work",7,0,0,"2006-06",1,0.02
+79702,63,"Maori","Auckland City","Sedentary Work",6,0,0,"2008-06",2,0.01
+79701,15,"European","Christchurch City","Sedentary Work",1,0,0,"2016-06",5,0.07
+79700,34,"European","Auckland City","Sedentary Work",6,0,0,"2012-06",8,0.03
+79699,58,"European","Auckland City","Medium Work",10,0,0,"2014-06",8,0.01
+79698,41,"European","Unknown","Sedentary Work",5,0,0,"2015-06",13,0.07
+79697,39,"Asian","Auckland City","Medium Work",10,0,0,"2014-06",3,0.02
+79696,80,"Pacific Peoples","Auckland City","Sedentary Work",10,0,0,"2013-06",0,0.01
+79695,60,"Asian","Wellington City","Sedentary Work",3,0,0,"2011-06",4,0.02
+79692,42,"Pacific Peoples","Auckland City","Medium Work",6,0,0,"2016-06",12,0.11
+79691,66,"European","Unknown","Sedentary Work",2,0,0,"2015-06",14,0.08
+79690,43,"Other Ethnicity","Unknown","Sedentary Work",6,0,1,"2016-06",4,0.13
+79689,77,"Pacific Peoples","Auckland City","Sedentary Work",8,0,0,"2015-06",5,0.02
+79688,43,"European","Unknown","Sedentary Work",8,0,0,"2011-06",3,0
+79687,50,"European","Unknown","Sedentary Work",10,0,0,"2015-06",1,0
+79686,39,"European","Unknown","Light Work",5,0,0,"2016-06",10,0.01
+79685,69,"European","Unknown","Sedentary Work",4,0,0,"2016-06",4,0.02
+79684,30,"Pacific Peoples","Wellington City","Medium Work",10,0,0,"2010-06",2,0.01
+79683,44,"European","Unknown","Medium Work",8,0,0,"2014-06",3,0.03
+79681,68,"European","Unknown","Heavy Work",7,0,0,"2010-06",1,0.01
+79680,20,"European","Unknown","Heavy Work",1,0,0,"2016-06",25,0.19
+79679,24,"European","Auckland City","Sedentary Work",6,0,0,"2012-06",3,0.01
+79678,55,"Asian","Auckland City","Not Stated",2,0,0,"2009-06",2,0.03
+79677,32,"Maori","Unknown","Sedentary Work",9,0,0,"2016-06",1,0
+79676,40,"Other Ethnicity","North Shore City","Light Work",99,0,0,"2016-06",10,0.05
+79675,57,"Asian","Auckland City","Sedentary Work",10,0,0,"2008-06",0,0.02
+79674,25,"European","Dunedin City","Medium Work",3,0,0,"2015-06",4,0.04
+79673,27,"European","Unknown","Sedentary Work",9,0,0,"2016-06",4,0.02
+79672,69,"European","Tauranga City","Sedentary Work",6,0,0,"2010-06",9,0.04
+79671,25,"Asian","Auckland City","Medium Work",9,0,0,"2010-06",0,0
+79670,27,"European","Unknown","Sedentary Work",1,0,0,"2011-06",8,0.12
+79669,24,"Maori","Unknown","Medium Work",9,0,0,"2009-06",5,0.03
+79668,51,"European","Unknown","Heavy Work",3,0,0,"2007-06",6,0.04
+79667,16,"Maori","Unknown","Sedentary Work",3,0,0,"2006-06",1,0.03
+79666,76,"European","Unknown","Sedentary Work",7,0,0,"2009-06",3,0.01
+79665,35,"Other Ethnicity","Whangarei District","Sedentary Work",6,0,0,"2009-06",3,0.02
+79664,17,"Asian","Auckland City","Sedentary Work",1,0,0,"2016-06",3,0.02
+79662,43,"European","Unknown","Light Work",99,0,0,"2006-06",7,0.01
+79661,35,"European","Unknown","Heavy Work",4,0,0,"2016-06",9,0.02
+79660,37,"Maori","Auckland City","Light Work",8,0,1,"2014-06",8,0.04
+79659,40,"European","Unknown","Medium Work",99,0,0,"2014-06",4,0.05
+79658,35,"European","Unknown","Heavy Work",2,0,0,"2016-06",10,0.02
+79657,75,"European","Unknown","Sedentary Work",2,0,0,"2016-06",7,0.01
+79656,25,"Maori","Unknown","Sedentary Work",9,0,0,"2015-06",3,0.02
+79655,33,"Maori","Unknown","Sedentary Work",6,0,0,"2016-06",2,0.01
+79654,70,"Asian","Auckland City","Sedentary Work",6,0,0,"2014-06",5,0.01
+79653,70,"European","Unknown","Sedentary Work",9,0,0,"2012-06",1,0.01
+79652,21,"European","Unknown","Sedentary Work",8,0,0,"2012-06",4,0
+79650,19,"Asian","Manukau City","Sedentary Work",10,0,0,"2014-06",3,0
+79649,28,"Pacific Peoples","Unknown","Sedentary Work",5,0,0,"2006-06",2,0.02
+79646,80,"European","Unknown","Not defined",10,0,0,"2007-06",2,0.04
+79645,59,"European","Unknown","Sedentary Work",7,0,0,"2014-06",9,0.02
+79644,18,"Maori","Unknown","Sedentary Work",10,0,0,"2014-06",2,0.16
+79643,39,"Maori","Auckland City","Sedentary Work",10,0,0,"2013-06",6,0.02
+79642,37,"Maori","Unknown","Light Work",8,0,1,"2015-06",7,0.06
+79641,52,"European","Auckland City","Sedentary Work",3,0,0,"2014-06",3,0.01
+79639,53,"European","Auckland City","Sedentary Work",2,1,0,"2013-06",4,0.04
+79638,69,"European","Auckland City","Sedentary Work",6,0,0,"2012-06",15,0.06
+79637,44,"European","Unknown","Light Work",6,0,0,"2015-06",8,0.06
+79636,34,"European","Unknown","Light Work",5,0,1,"2016-06",6,0.15
+79634,72,"European","Unknown","Sedentary Work",5,0,0,"2011-06",7,0.03
+79633,32,"Maori","Unknown","Sedentary Work",8,0,0,"2016-06",32,0.12
+79632,26,"Asian","Auckland City","Light Work",2,0,0,"2008-06",1,0.03
+79630,18,"European","Christchurch City","Heavy Work",8,0,0,"2016-06",7,0.06
+79628,46,"European","Christchurch City","Sedentary Work",99,0,0,"2016-06",3,0.02
+79626,28,"Asian","Unknown","Sedentary Work",9,0,0,"2009-06",1,0.01
+79625,67,"European","Unknown","Medium Work",8,0,0,"2016-06",5,0.04
+79624,41,"European","Christchurch City","Sedentary Work",1,0,0,"2013-06",1,0.06
+79623,21,"European","Unknown","Sedentary Work",5,0,0,"2014-06",15,0.03
+79621,68,"European","Unknown","Sedentary Work",1,0,0,"2016-06",1,0.02
+79619,15,"European","Unknown","Sedentary Work",6,0,0,"2016-06",22,0.06
+79618,70,"European","Christchurch City","Medium Work",4,0,0,"2015-06",7,0.04
+79617,54,"European","Unknown","Very Heavy Work",5,0,0,"2013-06",4,0.02
+79616,40,"European","Unknown","Sedentary Work",4,0,0,"2015-06",1,0.01
+79615,63,"European","Christchurch City","Sedentary Work",1,0,0,"2013-06",1,0.03
+79614,29,"Maori","Auckland City","Sedentary Work",10,0,0,"2016-06",0,0.01
+79613,61,"European","Christchurch City","Light Work",2,0,0,"2010-06",3,0.04
+79612,71,"European","Unknown","Light Work",8,0,0,"2015-06",4,0.03
+79611,28,"Maori","Unknown","Medium Work",2,0,0,"2006-06",0,0.06
+79610,80,"Asian","Unknown","Sedentary Work",99,0,0,"2013-06",2,0.05
+79609,38,"European","Hamilton City","Medium Work",6,0,0,"2015-06",5,0.03
+79608,46,"Maori","Dunedin City","Light Work",6,0,0,"2014-06",6,0.02
+79607,24,"European","Unknown","Medium Work",7,0,0,"2015-06",2,0
+79606,62,"European","Christchurch City","Light Work",1,2,0,"2014-06",23,0.13
+79605,51,"Asian","Unknown","Sedentary Work",7,0,0,"2006-06",4,0.02
+79604,32,"Pacific Peoples","Auckland City","Sedentary Work",4,0,0,"2016-06",6,0.07
+79603,67,"European","Unknown","Medium Work",8,0,0,"2010-06",5,0.06
+79601,23,"Asian","Unknown","Sedentary Work",7,0,0,"2007-06",6,0.02
+79600,33,"European","Tauranga City","Medium Work",8,0,0,"2016-06",8,0.04
+79599,70,"European","Unknown","Medium Work",8,0,0,"2016-06",8,0.05
+79598,53,"European","Unknown","Light Work",9,0,0,"2011-06",2,0.01
+79596,22,"European","Unknown","Very Heavy Work",6,1,1,"2016-06",35,0.18
+79595,21,"European","Unknown","Medium Work",9,0,0,"2016-06",8,0.08
+79594,47,"Maori","Hamilton City","Sedentary Work",10,0,0,"2013-06",3,0.04
+79593,73,"European","Unknown","Sedentary Work",2,0,0,"2012-06",2,0.02
+79592,25,"European","Tauranga City","Heavy Work",5,0,0,"2015-06",8,0.08
+79591,25,"Maori","Auckland City","Medium Work",8,0,0,"2014-06",5,0.01
+79590,22,"European","Unknown","Heavy Work",9,0,0,"2014-06",20,0.06
+79589,17,"European","Dunedin City","Sedentary Work",4,0,0,"2016-06",7,0.1
+79588,69,"Residual Categories","Unknown","Heavy Work",9,0,0,"2009-06",2,0.01
+79587,42,"Other Ethnicity","Auckland City","Sedentary Work",5,0,0,"2016-06",17,0.04
+79586,25,"Asian","Auckland City","Medium Work",9,0,0,"2015-06",2,0.02
+79585,40,"European","Unknown","Heavy Work",6,0,0,"2015-06",8,0.02
+79582,47,"Residual Categories","Christchurch City","Light Work",9,0,0,"2007-06",0,0
+79581,37,"European","Tauranga City","Medium Work",8,0,0,"2016-06",3,0.02
+79580,71,"European","Auckland City","Sedentary Work",2,1,0,"2016-06",13,0.02
+79577,33,"European","Wellington City","Medium Work",3,0,0,"2016-06",0,0
+79576,21,"Maori","Unknown","Light Work",4,0,0,"2015-06",4,0.04
+79574,23,"European","Wellington City","Light Work",5,0,0,"2016-06",1,0.02
+79573,54,"European","Wellington City","Sedentary Work",99,0,0,"2015-06",10,0.04
+79572,71,"European","Auckland City","Sedentary Work",1,0,0,"2016-06",3,0.01
+79571,46,"Other Ethnicity","Manukau City","Sedentary Work",2,0,0,"2013-06",7,0.03
+79570,45,"European","Unknown","Light Work",4,0,0,"2015-06",6,0.02
+79569,21,"European","Unknown","Sedentary Work",9,0,0,"2009-06",4,0.02
+79568,33,"European","Unknown","Heavy Work",7,0,0,"2008-06",9,0.04
+79566,59,"European","Auckland City","Sedentary Work",1,0,0,"2016-06",4,0.02
+79565,57,"Pacific Peoples","Auckland City","Medium Work",10,0,0,"2013-06",5,0.07
+79564,56,"Residual Categories","Unknown","Sedentary Work",10,0,0,"2010-06",6,0.03
+79563,35,"Asian","Wellington City","Heavy Work",99,0,0,"2011-06",4,0.04
+79562,70,"European","Unknown","Sedentary Work",3,0,0,"2016-06",39,0.06
+79561,30,"Residual Categories","Auckland City","Sedentary Work",7,0,0,"2012-06",6,0.05
+79559,76,"European","Unknown","Sedentary Work",8,0,0,"2016-06",1,0
+79558,44,"Maori","Unknown","Heavy Work",9,0,0,"2015-06",3,0.05
+79557,40,"European","Unknown","Heavy Work",2,0,0,"2009-06",2,0.02
+79555,30,"European","North Shore City","Sedentary Work",5,0,0,"2009-06",1,0.02
+79554,15,"Asian","Auckland City","Sedentary Work",7,0,0,"2015-06",3,0.06
+79553,43,"European","Wellington City","Sedentary Work",1,0,0,"2008-06",4,0.04
+79550,23,"Maori","Unknown","Light Work",5,0,0,"2014-06",1,0.02
+79547,61,"European","Unknown","Sedentary Work",6,0,0,"2014-06",4,0
+79546,68,"European","Unknown","Sedentary Work",5,0,0,"2014-06",5,0.04
+79544,41,"Asian","Auckland City","Sedentary Work",3,0,0,"2015-06",4,0.03
+79543,41,"Pacific Peoples","Whangarei District","Medium Work",9,0,0,"2016-06",15,0.13
+79542,17,"Maori","Auckland City","Sedentary Work",6,0,0,"2007-06",1,0.01
+79540,18,"European","Unknown","Sedentary Work",99,0,0,"2014-06",4,0.02
+79539,23,"European","Unknown","Light Work",4,0,0,"2010-06",1,0.06
+79538,36,"Asian","Unknown","Sedentary Work",7,0,0,"2013-06",2,0
+79537,33,"Asian","Auckland City","Light Work",7,0,0,"2011-06",3,0.04
+79536,50,"European","Christchurch City","Medium Work",7,0,0,"2015-06",5,0.01
+79535,58,"European","Wellington City","Light Work",99,0,0,"2015-06",7,0.07
+79534,41,"Asian","Auckland City","Sedentary Work",5,0,0,"2016-06",1,0
+79533,46,"Other Ethnicity","Unknown","Medium Work",99,0,0,"2016-06",4,0.02
+79531,22,"Other Ethnicity","Auckland City","Medium Work",5,0,0,"2016-06",12,0.09
+79530,16,"European","Unknown","Sedentary Work",3,0,0,"2016-06",27,0.08
+79529,18,"Pacific Peoples","Auckland City","Sedentary Work",10,0,0,"2010-06",3,0
+79528,46,"Asian","Auckland City","Sedentary Work",1,0,0,"2012-06",3,0.09
+79527,33,"European","Christchurch City","Medium Work",4,0,0,"2006-06",3,0.02
+79525,27,"European","Unknown","Medium Work",8,0,0,"2016-06",0,0
+79524,32,"Maori","Unknown","Sedentary Work",10,0,0,"2016-06",13,0.04
+79523,41,"Pacific Peoples","Auckland City","Sedentary Work",8,0,0,"2016-06",5,0.03
+79522,30,"European","Unknown","Medium Work",1,0,0,"2015-06",12,0.04
+79521,33,"European","Christchurch City","Heavy Work",5,0,0,"2007-06",2,0.04
+79520,45,"European","Auckland City","Light Work",3,0,0,"2014-06",2,0.03
+79519,16,"Asian","Unknown","Sedentary Work",6,0,0,"2016-06",0,0
+79518,17,"Maori","Unknown","Sedentary Work",10,0,0,"2015-06",5,0
+79517,39,"European","Auckland City","Sedentary Work",2,0,0,"2009-06",17,0.07
+79515,40,"Other Ethnicity","Unknown","Heavy Work",8,0,0,"2009-06",2,0.01
+79514,29,"Maori","Unknown","Medium Work",9,0,0,"2011-06",0,0.01
+79512,64,"European","Tauranga City","Medium Work",2,0,0,"2013-06",4,0.03
+79511,67,"European","Auckland City","Sedentary Work",1,0,0,"2014-06",5,0.05
+79509,52,"European","Auckland City","Medium Work",2,0,0,"2010-06",3,0
+79508,48,"European","Dunedin City","Medium Work",6,0,0,"2008-06",5,0.04
+79507,78,"European","Unknown","Sedentary Work",7,0,0,"2014-06",5,0.05
+79505,65,"European","Auckland City","Medium Work",4,0,0,"2014-06",3,0.01
+79503,50,"European","Unknown","Heavy Work",8,0,0,"2007-06",2,0
+79501,31,"European","Unknown","Sedentary Work",9,0,0,"2007-06",6,0.11
+79498,49,"Other Ethnicity","Unknown","Medium Work",2,0,0,"2009-06",2,0.01
+79497,62,"European","Manukau City","Medium Work",10,0,0,"2006-06",2,0.01
+79496,34,"Pacific Peoples","Auckland City","Sedentary Work",7,0,0,"2016-06",3,0.02
+79495,63,"Asian","Auckland City","Sedentary Work",8,0,0,"2014-06",3,0.02
+79494,52,"European","Tauranga City","Medium Work",6,0,0,"2016-06",4,0.05
+79493,23,"European","Hamilton City","Sedentary Work",8,0,0,"2009-06",6,0.05
+79491,15,"European","Auckland City","Sedentary Work",10,0,0,"2010-06",1,0.03
+79489,39,"Maori","Auckland City","Medium Work",2,0,0,"2015-06",1,0.03
+79488,42,"European","Auckland City","Sedentary Work",3,2,0,"2015-06",13,0.16
+79487,71,"European","Unknown","Sedentary Work",2,0,0,"2006-06",3,0
+79486,52,"Asian","Auckland City","Medium Work",3,0,0,"2010-06",1,0
+79485,22,"European","Unknown","Sedentary Work",99,0,0,"2010-06",4,0.01
+79484,43,"European","Unknown","Light Work",7,0,0,"2009-06",6,0.02
+79483,43,"European","Auckland City","Sedentary Work",9,0,0,"2015-06",7,0.05
+79482,26,"European","Auckland City","Very Heavy Work",2,0,0,"2008-06",2,0.03
+79481,67,"European","Unknown","Light Work",9,0,0,"2008-06",3,0.04
+79479,49,"European","Unknown","Heavy Work",7,0,0,"2008-06",1,0.02
+79478,40,"European","Unknown","Medium Work",8,0,0,"2015-06",3,0
+79477,18,"Maori","Christchurch City","Sedentary Work",8,0,0,"2016-06",10,0.05
+79476,54,"European","Christchurch City","Sedentary Work",4,0,0,"2014-06",0,0
+79475,40,"European","Unknown","Light Work",4,0,0,"2011-06",4,0.01
+79474,56,"European","Christchurch City","Light Work",5,0,0,"2013-06",3,0.03
+79473,15,"European","Unknown","Sedentary Work",99,0,0,"2016-06",4,0.02
+79472,20,"Asian","Auckland City","Sedentary Work",8,0,0,"2016-06",0,0.04
+79471,56,"Asian","North Shore City","Light Work",3,0,0,"2015-06",3,0.02
+79469,58,"European","Unknown","Medium Work",8,0,0,"2010-06",2,0.03
+79468,47,"Pacific Peoples","Unknown","Medium Work",8,0,0,"2015-06",10,0.03
+79467,47,"Other Ethnicity","Auckland City","Light Work",7,1,0,"2008-06",5,0.04
+79466,73,"European","Auckland City","Sedentary Work",8,1,0,"2012-06",12,0.09
+79465,79,"Other Ethnicity","Christchurch City","Sedentary Work",8,0,0,"2015-06",6,0.07
+79462,28,"Pacific Peoples","Auckland City","Heavy Work",10,0,0,"2014-06",5,0.07
+79461,56,"European","Christchurch City","Medium Work",5,0,0,"2012-06",1,0.01
+79460,60,"European","Unknown","Sedentary Work",6,0,0,"2016-06",16,0.09
+79458,56,"European","Christchurch City","Heavy Work",2,0,0,"2016-06",4,0.01
+79457,26,"Maori","North Shore City","Medium Work",2,0,0,"2013-06",2,0.02
+79456,29,"European","Wellington City","Sedentary Work",2,0,0,"2009-06",7,0.1
+79455,22,"European","Unknown","Sedentary Work",99,0,0,"2016-06",4,0.01
+79454,23,"European","Unknown","Medium Work",99,0,0,"2016-06",0,0.01
+79453,28,"Pacific Peoples","Wellington City","Light Work",99,0,0,"2015-06",2,0.01
+79452,66,"European","Whangarei District","Heavy Work",3,0,0,"2013-06",4,0.02
+79451,54,"European","Unknown","Sedentary Work",6,0,0,"2011-06",1,0.01
+79450,32,"Asian","Auckland City","Sedentary Work",5,0,0,"2011-06",0,0.04
+79449,34,"European","Christchurch City","Sedentary Work",5,0,2,"2015-06",26,0.14
+79448,63,"European","Wellington City","Medium Work",9,0,0,"2009-06",2,0.04
+79447,21,"European","Unknown","Sedentary Work",4,0,0,"2011-06",1,0
+79446,65,"European","Unknown","Sedentary Work",1,0,0,"2013-06",2,0.02
+79445,39,"European","Wellington City","Not defined",99,0,0,"2006-06",1,0.01
+79444,63,"Residual Categories","Unknown","Heavy Work",5,0,0,"2016-06",7,0
+79443,68,"European","Hamilton City","Sedentary Work",6,0,0,"2006-06",2,0.02
+79442,53,"Other Ethnicity","Auckland City","Sedentary Work",1,0,0,"2014-06",3,0.02
+79441,50,"European","Unknown","Sedentary Work",9,0,0,"2014-06",3,0
+79440,63,"Maori","Unknown","Sedentary Work",2,0,0,"2010-06",1,0
+79439,26,"Pacific Peoples","Auckland City","Heavy Work",8,0,0,"2016-06",12,0.12
+79438,34,"Maori","Unknown","Medium Work",7,0,0,"2007-06",3,0
+79437,77,"European","Manukau City","Sedentary Work",4,0,0,"2016-06",0,0
+79436,25,"European","Unknown","Medium Work",8,0,0,"2015-06",2,0.02
+79434,49,"European","Auckland City","Sedentary Work",99,0,0,"2016-06",20,0.05
+79433,44,"European","Unknown","Light Work",1,0,0,"2011-06",7,0.08
+79432,19,"European","Unknown","Sedentary Work",9,0,0,"2009-06",2,0.03
+79431,31,"European","Auckland City","Sedentary Work",6,0,0,"2016-06",8,0.03
+79430,50,"European","Unknown","Very Heavy Work",9,0,0,"2009-06",1,0.02
+79428,78,"European","Hamilton City","Sedentary Work",4,0,0,"2014-06",4,0.03
+79427,45,"European","Auckland City","Medium Work",99,0,0,"2016-06",7,0.04
+79426,57,"European","Christchurch City","Sedentary Work",4,0,0,"2015-06",5,0.01
+79425,74,"European","Tauranga City","Sedentary Work",8,0,0,"2016-06",4,0.04
+79424,22,"Maori","Unknown","Sedentary Work",10,0,0,"2006-06",0,0
+79423,26,"European","Dunedin City","Very Heavy Work",1,0,0,"2016-06",7,0.08
+79421,51,"Maori","Whangarei District","Sedentary Work",10,0,0,"2016-06",8,0.05
+79419,23,"Residual Categories","North Shore City","Sedentary Work",8,0,0,"2008-06",3,0.07
+79418,65,"European","Unknown","Sedentary Work",3,0,0,"2015-06",12,0.03
+79417,34,"Asian","Unknown","Medium Work",1,1,0,"2013-06",8,0.07
+79416,41,"European","Unknown","Medium Work",4,0,0,"2011-06",5,0.06
+79415,36,"European","Auckland City","Sedentary Work",8,1,0,"2016-06",4,0.05
+79414,38,"Pacific Peoples","Auckland City","Medium Work",10,0,0,"2010-06",7,0
+79412,61,"Pacific Peoples","Auckland City","Medium Work",1,0,0,"2013-06",1,0.05
+79411,59,"Pacific Peoples","Unknown","Sedentary Work",7,0,0,"2016-06",0,0
+79410,50,"European","Auckland City","Sedentary Work",5,0,0,"2011-06",1,0
+79409,72,"European","Auckland City","Light Work",3,0,0,"2009-06",6,0.04
+79408,28,"European","Unknown","Sedentary Work",5,0,0,"2016-06",1,0.03
+79406,44,"Asian","Auckland City","Light Work",6,0,0,"2016-06",6,0.03
+79405,29,"European","Unknown","Sedentary Work",8,0,0,"2007-06",0,0.02
+79404,52,"European","Auckland City","Heavy Work",3,0,0,"2014-06",14,0.11
+79403,55,"European","Unknown","Medium Work",2,0,0,"2009-06",5,0.02
+79402,21,"Pacific Peoples","Auckland City","Medium Work",10,0,0,"2016-06",6,0.06
+79401,17,"European","Unknown","Sedentary Work",7,0,0,"2011-06",5,0.06
+79400,65,"European","Unknown","Sedentary Work",3,0,0,"2007-06",1,0.02
+79399,56,"European","Dunedin City","Medium Work",4,0,0,"2016-06",14,0.04
+79398,59,"European","Wellington City","Sedentary Work",2,0,0,"2008-06",6,0.04
+79397,20,"European","Unknown","Sedentary Work",99,0,0,"2012-06",5,0.01
+79396,20,"European","Christchurch City","Medium Work",9,0,0,"2013-06",2,0.06
+79395,70,"European","Unknown","Sedentary Work",5,0,0,"2016-06",6,0.02
+79394,54,"European","Dunedin City","Medium Work",5,0,0,"2013-06",6,0.05
+79393,45,"Pacific Peoples","Unknown","Sedentary Work",10,0,0,"2015-06",3,0.02

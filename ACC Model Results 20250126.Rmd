@@ -1,0 +1,306 @@
+---
+title: 'Predictive Modeling for Gym Injury Prevention: Identifying High-Risk Individuals
+  for Targeted Intervention'
+author: "Sujith Roy S"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: yes
+    toc_float: yes
+  pdf_document:
+    toc: yes
+---
+# Overview
+In an effort to reduce gym-related injuries, ACC plans to provide a free gym training session. The team has compiled data for ACC clients who are eligible for this session. The data includes information such as age, ethnicity, work type, area unit (deprivation index), nature and count of previous injuries, and the year of the last claim for around 80,000 individuals. The dataset also includes a binary variable, y, where y == Y indicates a gym-related injury claim within 12 months, and y == N indicates no injury.
+
+The challenge here is that, given the limited budget, ACC can only offer this program to 500 individuals. Therefore, the team has been tasked with identifying individuals most likely to suffer gym-related injuries.
+
+The goal of this analysis is to develop a predictive model to identify individuals who are most likely to get injured in the gym based on historical data and characteristics, while ensuring that the initiative targets the right individuals effectively.
+
+
+# Challenges
+  - During exploratory analysis, we noticed class imbalance in the data, with significantly more individuals having no injury claims than those with injuries.
+  
+- Non-availability of additional data such as:
+  - Physical health status (e.g., height, weight, BMI)
+  - Past experience with trainers or injury rehabilitation
+  - Frequency of workouts and lifestyle factors, including how the individual got injured in the first place (e.g., were they trained by a professional or self-taught?)
+  - Injury timelines (when the injury occurred and its recovery progress)
+  - Navigating issues of equity, fairness, and ensuring that the initiative does not favor a specific group but instead targets a broad range of individuals who would benefit from injury prevention.
+
+# Initial thoughts
+The evidence provided by the clinical advisor and team around the effectiveness of personal training sessions shows that participants who underwent 36 training sessions over 12 weeks experienced a reduction in injuries. The data team is concerned that a single session may not have the same long-term impact on injury reduction. 
+
+Given the uncertainty surrounding the effectiveness of just one session, we recommend conducting additional research or piloting a longer-term program (e.g., multiple sessions over several months). 
+The team  recommends gathering further evidence to determine whether a single session would be sufficient or if additional sessions would be necessary to see meaningful results.
+
+However, the team can assist this initiative by identifying the individuals most likely to face a gym injury based on the data provided.
+
+To closely monitor the effectiveness of this intervention/initiative, we propose implementing an automated system to track injury reports among the selected individuals over the next 12 months. This will help evaluate whether the program leads to a reduction in injuries and allow for adjustments to improve its effectiveness over time.
+
+
+# Technical Approach
+
+- Identify features that could potentially feed into the model.
+  
+- Use of the Random Forest classifier is well-suited for this task due to its ensemble nature, which allows it to handle both nonlinear relationships and complex interactions between features. Additionally, it is robust to overfitting, making it a strong choice for tasks like predicting the likelihood of gym-related injuries.
+
+- Stratified sampling is then used to select the final population, ensuring equity and fairness by maintaining the proportion of individuals in each class (injury and non-injury) for the target group. We are only factoring individuals with a likelihood of more than 50% to get injured. 
+
+- We are restricting the age criteria to 15-75, as 15 is the legal age for gym participation and individuals over 75 are less likely to engage in physical activities. This criterion may be adjusted based on advice from the clinical advisor.
+
+# Model Specification
+
+### Model 1 – Random Forest (Baseline - No Class Balancing)
+
+- Model Parameters: We trained the model with `ntree = 100` (100 trees) and used 2 variables at each split.
+- Model Evaluation: The model's performance was evaluated using the OOB error rate, which is 4.88%. Additionally, AUC (Area Under the ROC Curve) was used to assess discriminatory power.
+- Confusion Matrix: The confusion matrix for Model 1 indicates high accuracy for the "No Injury" class but poor performance for predicting injuries:
+  - Class error for 'No Injury' (N): 0.00325 (excellent).
+  - Class error for 'Injury' (Y): 0.914 (poor).
+
+  Despite its low error for the majority class, the model struggles with predicting the minority class.
+
+### Model 2 – Random Forest (SMOTE Applied)
+
+- Model Parameters: Similar to Model 1, we used `ntree = 100` and 8 variables at each split to further refine the model’s learning capacity.
+- Model Evaluation: The model's performance was evaluated using the OOB error rate, which increased to 9.05%. AUC was also considered, though it is not explicitly given here.
+  
+  - Confusion Matrix:
+    - Class error for 'No Injury' (N): 0.0016 (excellent).
+    - Class error for 'Injury' (Y): 0.9796 (still poor but improved from Model 1).
+  
+  Even though the overall performance has improved for the 'No Injury' class, predicting the 'Injury' class is still a challenge, albeit slightly better than Model 1 due to the use of SMOTE.
+
+Please refer to the Summary and 'Other metrics and diagnostics' section below for more information.
+
+# Caveats and conisderations
+1. Proof of Concept: The current model is a proof of concept and has not been sense checked. While the results are promising, further validation is necessary before drawing definitive conclusions.
+2. Peer Review: The model and its approach should undergo peer review before being used to inform decision-making. This will help ensure the methodology is robust and reliable.
+3. Optimization: The model has yet to be fully optimized for best performance. Further hyperparameter tuning and refinement are necessary to improve accuracy and reduce potential biases.
+4. Exploration of Alternative Models: The model relies on Random Forests and SMOTE balancing techniques. Alternative modeling approaches should be explored to ensure the best possible predictive performance.
+5. Class Imbalance: Despite addressing the class imbalance using SMOTE, the model's performance for predicting the minority class ('Y' - injury) is still a concern. Further analysis and potentially different balancing techniques should be considered.
+6. Monitoring the Initiative: Given the uncertainty around the effectiveness of a single session, it is crucial to monitor the initiative closely. We recommend implementing an automated system to track injury reports among the selected individuals over the next 12 months. This will allow us to measure whether the program is leading to a reduction in injuries and to make adjustments to the intervention if needed. This ongoing evaluation will be essential for refining the initiative and ensuring its long-term success.
+7. Additionl data: The data provided was only available up until 2016. With a larger and more recent dataset, such as data up to 2023, we will have a much bigger sample size to work with. This expanded data would allow us to split it into training and testing sets, enabling us to evaluate and refine the model more effectively.
+
+
+# Implementaion
+
+
+```{r setup, include=FALSE}
+source("source/1_load_preprocess.R")
+load("26Jan.RData")
+
+```
+
+### Data load, preprocessing , pre-modelling checks and feature section 
+This section outlines the data load, preprocessing , pre-modelling checks and feature section. Please refer to the "1_load_preprocess.R" for code specifics. 
+
+Steps include:
+
+1. Loading necessary Libraries and data
+
+2. Data Cleaning:
+   - a. Removing Outliers:
+     - Filters out rows with unrealistic ages (negative values or ages > 116).
+   - b. Handling Missing Values:
+     - Replaces missing `Areaunit_score` with 99 (default placeholder).
+     - Fills `NA` values in numeric injury-related columns with 0.
+   - c. Standardizing Date Information:
+     - Extracts the year ending in June (e.g., "2013") from `acci_year` and stores it as `YEJune_last_claim`.
+     - Computes a future claim date (`next_claim`) by adding 12 months to `YEJune_last_claim`. - Not used anywhere
+   - d. Feature Engineering:
+     - Creates a new column `total_injuries` by summing all numeric columns related to injury counts (columns starting with "num_" or ending with "_all").
+   - e. Handling Categorical Variables:
+     - For the `work_last_claim` column:
+       - Replaces missing values with "Not defined".
+       - Converts the column back to a factor.
+
+3. Check for multicollinearity and features that could potentially go into the model
+
+  
+Potential features are as follows,
+```{r echo=FALSE, warning=FALSE}
+# Load the dataset
+print(features)
+
+```
+
+# Rationale for feature selection 
+
+Features selected for Model 1 are as follows:
+
+- age_at_extraction_date: Age may influence the likelihood of injury due to differences in physical fitness, recovery time, and risk tolerance across age groups.
+- ethnicity_last_claim: Ethnic background may be a proxy for underlying socioeconomic or cultural factors that influence gym usage patterns or injury risks.
+- location_tla_last_claim: Geographic location might correlate with access to gyms, quality of gym facilities, or local physical activity trends.
+- work_last_claim: Occupational activity level (e.g., sedentary vs. physically demanding jobs) could influence injury risk when engaging in gym activities.
+- Areaunit_score: A socioeconomic index can reflect access to healthcare, lifestyle factors, and gym use patterns, which impact injury likelihood.
+- num_gym_all: A count of previous gym-related injuries serves as a direct predictor of future injuries based on patterns of risky behavior or gym habits.
+- num_wgt_all: Weightlifting injuries are relevant as they directly reflect gym-specific risks.
+- total_injuries: The overall injury count indicates an individual's propensity for injuries, providing predictive power for future risks.
+
+
+### Summary Model 1: Baseline Random Forest
+Please refer to "2_model_rf_baseline.R" and "3_model_rf_smote.R" for detailed code specifics. The summary of the model 1 is provided below.
+
+```{r echo=TRUE}
+# Model 1
+print(rf_model)
+
+
+```
+The confusion matrix shows how well the model predicts the two classes (N and Y). The rows represent the true classes, and the columns represent the predicted classes.
+
+True Negatives (N predicted as N): 75,764
+False Positives (N predicted as Y): 234
+False Negatives (Y predicted as N): 3,686
+True Positives (Y predicted as Y): 314
+
+Class Error
+The class error for the "N" class is 0.0031, which indicates a very low error for predicting non-injury cases. However, for the "Y" class (injury cases), the error is 0.9215, meaning the model struggles significantly to predict the minority class ("Y"). This is indicative of class imbalance—a common issue when the "Y" class (injury claims) is much smaller than the "N" class (non-injury claims).
+
+### Summary - Model 2: Random Forest SMOTE
+
+
+```{r echo=TRUE}
+# Model 2
+print(rf_model_balanced)
+```
+After balancing the data using SMOTE, the OOB error rate is slightly worse at 6.65%, compared to the 4.9% in Model 1. This might seem counterintuitive, but it indicates that while SMOTE helps balance the class distribution, it may also introduce some noise or overfitting. 
+
+True Negatives (N predicted as N): 79,868
+False Positives (N predicted as Y): 130
+False Negatives (Y predicted as N): 7,837
+True Positives (Y predicted as Y): 163
+Class Error:
+The class error for the "N" class is 0.0016, which is still very low, but for the "Y" class, the error is much higher at 0.9796. This suggests that, even after balancing, the model is still heavily biased toward predicting the "N" class and struggles to accurately predict the rare "Y" class.
+
+### Note
+While Model 2 (with SMOTE) results in a slightly higher OOB error rate (6.65%) compared to Model 1 (4.88%), it offers significant advantages in addressing class imbalance.
+
+The key advantage of Model 2 lies in its improved ability to predict the minority class (Y), which is crucial for the goal of identifying individuals at high risk of gym-related injuries.
+
+Although the class error for "Y" remains high, the overall performance demonstrates that SMOTE effectively helps balance the class distribution and provides better predictions for the rare class.
+
+Given that predicting the minority class is a priority for the injury prevention initiative, Model 2 is more suitable despite the slightly higher error rate, as it focuses on improving predictions where it matters most. Further fine-tuning and optimization will likely enhance its ability to accurately predict injuries, making it the more effective model for this task.
+
+
+# Other metrics and diagnostics
+
+Please refer to "4_diagnostics.R" for code specifics.
+
+### Variable importance
+```{r echo=FALSE, fig.height=6, fig.width=8, warning=FALSE}
+library(gridExtra)
+library(plotly)
+
+grid.arrange(plot1, plot3, ncol = 2)
+
+```
+
+
+The top features identified by both models are notably aligned, highlighting key factors that contribute to injury risk.
+
+Both Model 1 and Model 2 emphasize age and area unit score, indicating the importance of demographic characteristics in predicting injury likelihood.
+
+Additionally, gym injuries feature prominently in second models, emphasizing the relevance of prior injury history in forecasting future risks.
+
+While Model 1 includes features like work_last_claim, ethnicity_last_claim, location, and age, Model 2 highlights total injuries, soft tissue injuries, and number of gym injuries as key predictors.
+
+Despite the differences in specific features, both models share a core set of predictors, reinforcing the consistency and reliability of these variables in risk modeling.
+
+
+### AUC
+
+AUC (Area Under the Curve) doesn't directly provide accuracy of probabilities, it measures how well the model distinguishes between the positive class (likelihood of injury) and the negative class (likelihood of non-injury). A higher AUC means that the model is better at assigning higher probabilities to those who will sustain an injury and lower probabilities to those who will not.  
+
+```{r echo=FALSE, fig.height=6, fig.width=8, warning=FALSE}
+
+grid.arrange(plot2, plot4, ncol = 2)
+
+
+```
+
+
+Model 2, with an AUC of 0.98, shows an even better performance, highlighting its enhanced ability to accurately predict injury likelihood, making it more effective for risk identification.
+
+## Summary -  Model 1 vs Model 2 
+
+This section provides a brief comparison of Model 1 vs Model 2
+
+
+| Metric                            | Model 1 (Baseline) | Model 2 (SMOTE Applied) |
+|-----------------------------------|--------------------|-------------------------|
+| **AUC (Area Under Curve)**        | 0.96               | 0.979                   |
+| **Out-of-Bag (OOB) Error Rate**   | 4.88%              | 6.65%                   |
+| **True Negatives (N)**            | 75,751             | 79,868                  |
+| **False Positives (N predicted as Y)** | 247         | 130                     |
+| **False Negatives (Y predicted as N)** | 3,655      | 7,837                   |
+| **True Positives (Y)**            | 345                | 163                     |
+| **Class Error for 'N'**           | 0.00325            | 0.0019                  |
+| **Class Error for 'Y'**           | 0.91375            | 0.9796                  |
+| **Key Features**                  | Weight training injury, Work nature, Ethnicity, Gym injuries, Age, Total injury, Area unit score, Location | Age, Total injuries, Area unit score, Soft tissue injuries, Gym injuries, Knee injuries |
+| **Model Performance**             | Struggles to predict minority class ('Y') | Better performance for predicting 'Y' after SMOTE, but still biased |
+
+
+
+### Key Insights
+- AUC: Model 2 (SMOTE applied) shows a slight improvement in AUC, indicating better overall discriminatory ability between the two classes.
+- Class Errors: Both models perform well for the "No Injury" class (N), but the class error for "Injury" (Y) is high in Model 1, though it improves with SMOTE in Model 2.
+- OOB Error Rate: Model 1 has a lower OOB error rate, suggesting it might be more stable, but Model 2 performs better on AUC, indicating that balancing the classes with SMOTE helps improve overall predictive performance.
+
+# Population selection
+The stratified sampling ensures that the final pool of 500 individuals is diverse and representative, addressing concerns of equity and fairness. The sampling process is based on  predicted injury probabilities and ensures equity by considering both age and ethnicity in the selection process. 
+
+Please refer to "5_population_selection.R" for code specifics.
+
+Key Steps:
+
+1. Stratified Sampling by Age and Ethnicity:
+   - Create age bins and perform stratified sampling based on age and ethnicity, ensuring diversity across groups.
+   - Sample 15 individuals per combination of age group and ethnicity where the predicted probability is greater than 0.50.
+
+2. Restricting the Age Criteria:
+   - Restricting the age criteria to 15-75, as 15 is the legal age for gym participation and individuals over 75 are less likely to engage in physical activities. This criterion may be adjusted based on advice from the clinical advisor.
+
+
+     
+Summary statistics and sample shown below
+
+```{r echo=FALSE}
+stratified_sample %>% head()
+stratified_sample %>% summary()
+```
+
+# Interactive Visualisation 
+
+This section shows how the selection of the target population has differed between simply selecting the top 500 and selecting from a stratified sample. The latter represents the final list that will be shared with the Programme Manager.
+
+Please refer to "6_visualisation.R" for code specifics
+
+```{r echo=FALSE, fig.height=6, fig.width=8, warning=FALSE}
+
+ggplotly(p1) # Age Distribution
+ggplotly(p2) # Ethnicity Distribution
+ggplotly(p3) # Proportional Ethnicity Distribution
+ggplotly(p4) # Age vs Ethnicity Breakdown
+
+```
+
+
+# Caveats and conisderations
+1. Proof of Concept: The current model is a proof of concept and has not yet undergone peer review. While the results are promising, further validation is necessary before drawing definitive conclusions.
+2. Peer Review: The model and its approach should undergo peer review before being used to inform decision-making. This will help ensure the methodology is robust and reliable.
+3. Optimization: The model has yet to be fully optimized for best performance. Further hyperparameter tuning and refinement are necessary to improve accuracy and reduce potential biases.
+4. Exploration of Alternative Models: The model relies on Random Forests and SMOTE balancing techniques. Alternative modeling approaches should be explored to ensure the best possible predictive performance.
+5. Class Imbalance: Despite addressing the class imbalance using SMOTE, the model's performance for predicting the minority class ('Y' - injury) is still a concern. Further analysis and potentially different balancing techniques should be considered.
+6. Monitoring the Initiative: Given the uncertainty around the effectiveness of a single session, it is crucial to monitor the initiative closely. We recommend implementing an automated system to track injury reports among the selected individuals over the next 12 months. This will allow us to measure whether the program is leading to a reduction in injuries and to make adjustments to the intervention if needed. This ongoing evaluation will be essential for refining the initiative and ensuring its long-term success.
+7. Additional data: The data provided was only available up until 2016. With a larger and more recent dataset, such as data up to 2023, we will have a much bigger sample size to work with. This expanded data would allow us to split it into training and testing sets, enabling us to evaluate and refine the model more effectively. Additional data such as physical attrributes, access to trainers, activity levels, injury causes and injury timeline will add further predictive value.
+
+
+# Conclusion
+The team believes that using predictive modeling and stratified sampling is the best approach to identifying the individuals most likely to benefit from the gym injury prevention initiative. By ensuring that the selection process is both accurate and equitable, we can maximize the effectiveness of the program within the constraints of the available budget. However, the team recommends further research into the effectiveness of a single personal training session and the implementation of a monitoring system to track the impact of the initiative over time.
+
+ 
+
+
